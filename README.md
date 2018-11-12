@@ -1,7 +1,5 @@
-#### live url:
-<a href="https://springmvc-app-ranjit.herokuapp.com/user"> 
-	https://springmvc-app-ranjit.herokuapp.com/user 
-</a>
+#### live url: <a href="https://springmvc-app-ranjit.herokuapp.com/user">https://springmvc-app-ranjit.herokuapp.com/user</a>
+
 #### Modules used in this demo app:- 
 	java, springBoot, jpa, h2database, theamleaf
 
