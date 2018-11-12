@@ -1,7 +1,7 @@
-# Modules used in this demo app:- 
+#### Modules used in this demo app:- 
 	java, springBoot, jpa, h2database, theamleaf
 
-### Required h2 config in spring boot:-
+#### Required h2 config in spring boot:-
 	#h2
 	spring.h2.console.enabled= true
 	spring.datasource.platform=h2
