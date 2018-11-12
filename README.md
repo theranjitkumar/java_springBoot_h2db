@@ -1,7 +1,7 @@
-# Modules used in demo app:- 
-	java, springBoot, jpa, h2database 
+# Modules used in this demo app:- 
+	java, springBoot, jpa, h2database, theamleaf
 
-### required h2 config in spring boot:-
+### Required h2 config in spring boot:-
 	#h2
 	spring.h2.console.enabled= true
 	spring.datasource.platform=h2
@@ -11,3 +11,8 @@
 	spring.datasource.username= sa
 	spring.datasource.password=
 	spring.datasource.driver-class-name=org.h2.Driver
+##### theamleaf default config:-
+	#theamleaf
+	spring.thymeleaf.mode=HTML5
+	spring.thymeleaf.prefix=classpath:/templates/
+	spring.thymeleaf.suffix=.html	
