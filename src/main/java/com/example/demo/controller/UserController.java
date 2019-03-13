@@ -20,11 +20,11 @@ public class UserController {
 
 	@RequestMapping("/user")
 	public ModelAndView users(ModelAndView mv) {
-		User u = new User();
-		u.setUserId(101);
-		u.setUserName("ranjit");
-		u.setUserCity("patna");
-		userRepo.save(u);
+//		User u = new User();
+//		u.setUserId(101);
+//		u.setUserName("ranjit");
+//		u.setUserCity("patna");
+//		userRepo.save(u);
 
 		List<User> users = new ArrayList<>();
 		users = (List<User>) userRepo.findAll();
@@ -37,9 +37,8 @@ public class UserController {
 	
 	
 	@PostMapping("/user")
-	public ModelAndView addUser(ModelAndView mv, @RequestParam int userId, @RequestParam String userName, @RequestParam String userCity) {
+	public ModelAndView addUser(ModelAndView mv, @RequestParam String userName, @RequestParam String userCity) {
 		User user = new User();
-		user.setUserId(userId);
 		user.setUserName(userName);
 		user.setUserCity(userCity);
 

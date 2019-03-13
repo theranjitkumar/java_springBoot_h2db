@@ -13,7 +13,7 @@ public class StudentController {
 
 	@Autowired
 	UserReop userRepo;
-	
+
 	@RequestMapping("/student")
 	public String getStudent() {
 		User u = new User();
@@ -21,25 +21,22 @@ public class StudentController {
 		u.setUserName("ranjit");
 		u.setUserCity("patna");
 		userRepo.save(u);
-		
+
 		userRepo.findAll();
 		return userRepo.findAll().toString();
 	}
-	
-	
+
 	@PostMapping("/student")
 	public String addStudent() {
-		
-		User user  = new User();
+
+		User user = new User();
 		user.setUserId(102);
 		user.setUserName("ajit");
 		user.setUserCity("delhi");
-		
+
 		userRepo.save(user);
 		System.out.println(user);
 		return "saved";
 	}
 
-	
-	
 }
